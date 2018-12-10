@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/Skopelos_016.jpg') no-repeat top center ;
+  background: url('images/Skopelos_016.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -76,17 +76,35 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+.overlay-1 {
+  opacity:1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.overlay-2 {
+  opacity: 0;
+  transition: .5s ease;
+}
+.overlay-container:hover .overlay-1 {
+  opacity:0;
+}
+.overlay-container:hover .overlay-2 {
+  opacity:1;
+  margin-top:-3em;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: table;
   margin: 10px auto;
+  padding: 0 10px 0 10px;
 }
 .location {
   background-color: #222;
-  color: slategrey;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -97,9 +115,11 @@ header .profile-image:hover {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  margin-right: auto;
+  margin-left: auto;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: slategrey;
 }
 
 ul.skills {
@@ -177,6 +197,11 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .card {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   header {
