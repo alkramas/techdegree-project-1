@@ -57,10 +57,11 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/Skopelos_016.jpg') no-repeat top center;
+  background: url('images/alps.JPG') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  background-position: center;
 }
 header {
   line-height: 1.5;
