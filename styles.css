@@ -70,8 +70,8 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 42%;
+  border: 6px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -118,9 +118,6 @@ header .profile-image:hover {
   transition: all .5s;
   margin-right: auto;
   margin-left: auto;
-}
-.card:hover {
-  border-color: slategrey;
 }
 
 ul.skills {
@@ -186,6 +183,16 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+figure {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+img.photography {
+  width: 100%;
 }
 
 /* Styles for larger screens */
